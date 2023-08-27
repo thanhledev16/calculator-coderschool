@@ -1,0 +1,87 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #29262c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.button,
+#calculator {
+  width: 100%;
+}
+
+#calculator {
+  width: 400px;
+  height: 400px;
+  background-color: #967c6d;
+}
+
+.row {
+  display: flex;
+}
+
+#display,
+.row {
+  justify-content: flex-end;
+}
+
+.button-wrapper {
+  padding: 10px;
+  flex-basis: 25%;
+  height: 60px;
+}
+
+.button {
+  color: #d74742;
+  background-color: #fff;
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  font-family: "dosis", sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 24px;
+  justify-content: center;
+}
+
+#display {
+  background-color: #382325;
+  height: 50px;
+  text-align: right;
+  font-family: "Dosis", sans-serif;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  margin: 10px;
+  padding: 10px;
+}
+
+.clear,
+.equal {
+  background-color: #d74742;
+  color: #fff;
+}
+@media screen and (max-width: 400px) {
+  #calculator {
+    width: 100%;
+  }
+  .button {
+    font-size: 15px;
+  }
+}
+
