@@ -28,7 +28,7 @@ const multiply = () => {
 
 // Set input number
 const addNumber = (num) => {
-  if (!operator) {
+  if (operator === null) {
     num1 += num;
     display.innerHTML = num1;
   } else {
@@ -39,7 +39,7 @@ const addNumber = (num) => {
 
 //Set function calculator
 function calculator() {
-  if (num1) {
+  if (num2) {
     if (operator === "add") {
       display.innerHTML = parseFloat(num1) + parseFloat(num2);
       num1 = display.innerHTML;
